@@ -18,11 +18,11 @@ Works with strings or numbers.
 ```js
 const evenOrOdd = require('num-is-even-or-odd');
 
-console.log(evenOrOdd(0)); //=> false
-console.log(evenOrOdd(2)); //=> false
+console.log(evenOrOdd(1)); //=> "odd"
+console.log(evenOrOdd(2)); //=> "even"
 
-console.log(evenOrOdd('1')); //=> true
-console.log(evenOrOdd('3')); //=> true
+console.log(evenOrOdd('1')); //=> "odd"
+console.log(evenOrOdd('2')); //=> "even"
 ```
 
 ### Author
