@@ -1,0 +1,11 @@
+{
+  "name": "even-or-odd",
+  "version": "1.0.0",
+  "description": "Verify if a number is even or odd",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Otavio Rampinelli <otaviorampinellielias@gmail.com>",
+  "license": "MIT"
+}
