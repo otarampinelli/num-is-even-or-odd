@@ -7,7 +7,7 @@ module.exports = function evenOrOdd(value) {
         throw new Error('Expected a number')
     }
 
-    const result = number % 2 === 0 ? true : false
+    const result = number % 2 === 0 ? 'even' : 'odd'
 
     return result
 }
