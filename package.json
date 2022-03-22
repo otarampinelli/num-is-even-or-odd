@@ -5,7 +5,9 @@
   "description": "Verify if a number is even or odd",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "lint": "eslint --ext .js",
+    "lint:fix": "eslint --fix"
   },
   "keywords": [
     "array",
@@ -20,5 +22,8 @@
     "integer"
   ],
   "author": "Otavio Rampinelli <otaviorampinellielias@gmail.com>",
-  "license": "MIT"
+  "license": "MIT",
+  "devDependencies": {
+    "eslint": "^8.11.0"
+  }
 }
