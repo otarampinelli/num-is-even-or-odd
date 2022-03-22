@@ -1,5 +1,5 @@
 {
-  "name": "even-or-odd",
+  "name": "num-is-even-or-odd",
   "version": "1.0.0",
   "description": "Verify if a number is even or odd",
   "main": "index.js",
