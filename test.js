@@ -17,8 +17,14 @@ test('should insert a string and return odd', () => {
     expect(evenOrOdd('1')).toEqual('odd')
 })
 
-test('should return an error', () => {
+test('should return an error if is not a number', () => {
     expect(() => {
         evenOrOdd('test')
     }).toThrow('Expected a number')
+})
+
+test('should return an error if is not a integer', () => {
+    expect(() => {
+        evenOrOdd(1.44)
+    }).toThrow('Number must be integer')
 })
