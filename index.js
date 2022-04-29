@@ -1,17 +1,31 @@
-'use strict'
+"use strict";
 
-module.exports = function evenOrOdd(value) {
-    const number = Math.abs(value)
+module.exports = function evenOrOdd(value, returnType = "str") {
+  const number = Math.abs(value);
 
-    if (Number(number) === number && number % 1 !== 0) {
-        throw new Error('Number must be integer')
-    }
+  if ((returnType === "str" || returnType === "bool") === false) {
+    throw new Error(
+      'Return type parameter must pass "str" to string or "bool" to boolean'
+    );
+  }
 
-    if (isNaN(number)) {
-        throw new Error('Expected a number')
-    }
+  if (Number(number) === number && number % 1 !== 0) {
+    throw new Error("Number must be integer");
+  }
 
-    const result = number % 2 === 0 ? 'even' : 'odd'
+  if (isNaN(number)) {
+    throw new Error("Expected a number");
+  }
 
-    return result
-}
+  let result;
+
+  if (returnType === "str") {
+    result = number % 2 === 0 ? "even" : "odd";
+  }
+
+  if (returnType === "bool") {
+    result = number % 2 === 0 ? 0 : 1;
+  }
+
+  return result;
+};
