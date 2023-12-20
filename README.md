@@ -18,13 +18,13 @@ const { isEvenOrOdd, isEven, isOdd } = evenOrOdd()
 
 // Method to verify even and odd
 
-console.log(evenOrOdd(3)); //=> "odd"
-console.log(evenOrOdd(4)); //=> "even"
+console.log(isEvenOrOdd(3)); //=> "odd"
+console.log(isEvenOrOdd(4)); //=> "even"
 
 // You can pass a "returnAsBool" boolean parameter to return results as boolean, true to even and false to odd, default value for parameter is false
 
-console.log(evenOrOdd(3, true)); //=> false (odd)
-console.log(evenOrOdd(4, true)); //=> true (even)
+console.log(isEvenOrOdd(3, true)); //=> false (odd)
+console.log(isEvenOrOdd(4, true)); //=> true (even)
 
 // Method to verify if the value is odd
 
