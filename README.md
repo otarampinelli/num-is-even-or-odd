@@ -2,47 +2,40 @@
 
 > Return even or odd to as result to a given number.
 
-
 ## Install
 
 Install with [npm](https://www.npmjs.com/):
 
 ```sh
-$ npm install --save num-is-even-or-odd
+$ npm install -D num-is-even-or-odd
 ```
 
 ## Usage
-
-Works with strings or numbers.
-
-You can pass an 'str' or 'bool' parameter to return the result in string or boolean, by defualt the function will return in string format.
-
 ```js
-const evenOrOdd = require('num-is-even-or-odd');
+import { evenOrOdd } from 'num-is-even-or-odd'
 
-// Whitout any return type parameter
+const { isEvenOrOdd, isEven, isOdd } = evenOrOdd()
 
-console.log(evenOrOdd(1)); //=> "odd"
-console.log(evenOrOdd(2)); //=> "even"
+// Method to verify even and odd
 
-console.log(evenOrOdd('1')); //=> "odd"
-console.log(evenOrOdd('2')); //=> "even"
+console.log(evenOrOdd(3)); //=> "odd"
+console.log(evenOrOdd(4)); //=> "even"
 
-// With 'str' parameter
+// You can pass a "returnAsBool" boolean parameter to return results as boolean, true to even and false to odd, default value for parameter is false
 
-console.log(evenOrOdd(1, 'str')); //=> "odd"
-console.log(evenOrOdd(2, 'str')); //=> "even"
+console.log(evenOrOdd(3, true)); //=> false (odd)
+console.log(evenOrOdd(4, true)); //=> true (even)
 
-console.log(evenOrOdd('1', 'str')); //=> "odd"
-console.log(evenOrOdd('2', 'str')); //=> "even"
+// Method to verify if the value is odd
 
-// With 'bool' parameter
+console.log(isOdd(3)); //=> true
+console.log(isOdd(4)); //=> false
 
-console.log(evenOrOdd(1, 'bool')); //=> 1
-console.log(evenOrOdd(2, 'bool')); //=> 0
+// Method to verify if the value is even
 
-console.log(evenOrOdd('1', 'bool')); //=> 1
-console.log(evenOrOdd('2', 'bool')); //=> 0
+console.log(isEven(3)); //=> false
+console.log(isEven(4)); //=> true
+
 ```
 
 ### Author
@@ -51,11 +44,10 @@ console.log(evenOrOdd('2', 'bool')); //=> 0
 
 * [LinkedIn Profile](https://linkedin.com/in/otarampinelli)
 * [GitHub Profile](https://github.com/otarampinelli)
-* [Twitter Profile](https://twitter.com/otarampinelli)
 
 ### License
 
-Copyright © 2022, [Otavio Rampinelli](https://github.com/otarampinelli).
+Copyright © 2023, [Otavio Rampinelli](https://github.com/otarampinelli).
 Released under the [MIT License](LICENSE).
 
 ***
