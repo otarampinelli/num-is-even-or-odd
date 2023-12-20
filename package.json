@@ -1,6 +1,6 @@
 {
   "name": "num-is-even-or-odd",
-  "version": "2.0.0",
+  "version": "2.0.1",
   "homepage": "https://github.com/otarampinelli/num-is-even-or-odd",
   "description": "Verify if a number is even or odd",
   "main": "./dist/index.js",
